@@ -34,9 +34,9 @@
 						}
 						tr.insertCell(-1).innerHTML = app_list_str;
 						if (devlist[i].online == 1) {
-							tr.insertCell(-1).innerHTML = "<%:Online%>";
+							tr.insertCell(-1).innerHTML = "<b style=color:green><%:Online%></b>";
 						} else {
-							tr.insertCell(-1).innerHTML = "<%:Offline%>";
+							tr.insertCell(-1).innerHTML = "<b style=color:red><%:Offline%></b>";
 						}
 						var childs = tr.childNodes;
 						Array.prototype.forEach.call(childs, function (child) {
